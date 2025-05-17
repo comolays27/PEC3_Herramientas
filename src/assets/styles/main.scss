@@ -1,30 +1,18 @@
-/**
- * Use this file to import partials.
- * Do not include SCSS code in this file.
- */
+@import "index.css";
 
-/**
- * Import variables
- */
+//fonts @imports 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 
-@import "variables";
+//helpers and boostrap @imports 
+@import "base/variables";
 
-/**
- * Import npm dependencies
- * see: https://v2.parceljs.org/features/module-resolution/
- * see commented examples below
- */
+//dependencies @imports  - animate.css and hover.css
+ @import "../../../node_modules/animate.css/animate.css";
+ @import "../../../node_modules/hover.css/css/hover.css";
 
-// @import "some-node-module";
-// @import "@some-company/some-node-module";
 
-/**
- * Import layouts
- * It's a best practice to use a different partial for each page
- */
-
-@import "layouts/home";
-
-/**
- * Do NOT include anything else in this file!
- */
+//all webs @imports layouts and necesary .scss
+@import "base/base";
+@import "base/typografy";
+@import "layouts/poster";
+@import "layouts/footer"

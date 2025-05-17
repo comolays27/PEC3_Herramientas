@@ -1,0 +1,9 @@
+.newsletter {
+
+  &__input {
+
+    @media (max-width: 468px) {
+      width: 30%;
+    }
+  }
+}

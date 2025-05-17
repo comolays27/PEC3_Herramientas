@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><!--Ya definido--></title>
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+    <link rel="preload" href="assets/images/fondo.webp" as="image">
+    <link rel="preload" href="assets/images/logo.svg" as="image">
+  </head>
+  <body class="text-[17px]">
+    <!-- nav -->
+    <header class="bg-cover bg-center h-auto" style="background-image: url('assets/images/fondo.webp');">
+      <div class="header container pt-3 mx-auto grid grid-cols-1 justify-items-center lg:grid-cols-2 items-center animate__animated animate__fadeIn">
+        <div class="header__logo"><a href="index.html" title="Ir a Inicio"><img src="assets/images/logo.svg" alt="Logo de Ecojornadas" lang="es" width="300" height="54"></a></div>
+        <nav class="header__nav mt-[1cm] lg:mt-[0]">
+          <ul class="nav__list grid md:grid-cols-[repeat(3,120px)] gap-8 justify-end justify-items-center">
+            <li class="list__pag p-1 ms-3"><a class="pag__link hvr-grow" href="speakers.html" title="Ir a Speakers" lang="es">Speakers</a></li>
+            <li class="list__pag p-1 ms-3"><a class="pag__link hvr-grow" href="#" title="Ir a Blog" lang="es">Blog</a></li>
+            <li class="list__pag p-1 ms-3"><a class="pag__link hvr-grow" href="#" title="Ir a Contacto" lang="es">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- poster section -->
+      <section class="poster container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 md:grid-rows-4 justify-items-center gap-[10px] mt-[2cm]">
+        <!-- box of dates -->
+        <div class="poster__post--one col-start-4 row-start-3 mt-[0.7cm] animate__animated animate__fadeInRightBig">
+          <p class="postone__title w-fit fs-5 p-1 rounded-[0.2cm] mb-2 text-[23px]">Fechas:</p>
+          <ul class="list__group rounded-[0.3cm] p-2 bg-white">
+            <li class="list__item p-2 text-black">2, 3 y 4 de mayo</li>
+            <li class="list__item p-2 text-black">22, 23 y 24 de junio</li>
+            <li class="list__item p-2 text-black">14, 15 y 16 de julio</li>
+          </ul>
+        </div>
+        <div class="poster__post--two col-start-1 col-end-3 row-start-3 mt-[0.7cm] p-2 animate__animated animate__fadeInLeft"><p>Únete a nosotros en la Conferencia de Economía Circular y descubre cómo las soluciones sostenibles están transformando el futuro. Expertos de todo el mundo compartirán sus conocimientos y experiencias para crear un impacto positivo en el medio ambiente y la economía. ¡No te lo pierdas!</p></div>
+        <div class="poster__post--three col-start-1 col-end-2 row-start-1 align-items-center p-2 animate__animated animate__fadeInLeft"><p>La Conferencia de Economía Circular se celebrará en el Palau Sant Jordi de Barcelona. ¡Te esperamos para ser parte de este evento único!</p></div>
+        <div class="poster__post--four col-start-4 row-start-1 align-items-center p-2 animate__animated animate__fadeInRightBig"><p>Colaboración global: Todos podemos contribuir al círculo de la economía circular.</p></div>
+        <div class="poster__post--sentence col-start-1 col-end-5 row-start-2 h-fit rounded-[0.2cm] p-4 text-5xl bg-main-sentence animate__animated animate__fadeIn"><p class="fs-1">La economía circular como motor de cambio</p></div>
+      </section>
+    </header>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Conoce quienes serán nuestros speakers. Charlas llenas de vitalidad y conocimiento.">
+      <title>Speakers</title>
+      <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+      <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" as="style">
+      <link rel="icon" href="assets/images/favicon.png" type="image/png">
+      <!-- preloads of logo and card images -->
+      <link rel="preload" href="assets/images/logo.svg" as="image">
+      <link rel="preload" as="image" href="assets/images/persona1.webp">
+      <link rel="preload" as="image" href="assets/images/persona2.webp">
+      <link rel="preload" as="image" href="assets/images/persona3.webp">
+      <link rel="preload" as="image" href="assets/images/persona4.webp">
+      <link rel="preload" as="image" href="assets/images/persona5.webp">
+      <link rel="preload" as="image" href="assets/images/persona6.webp">
+  </head>
+  <body>
+    <!-- nav -->
+    <header class="header__common">
+      <div class="nav  animate__animated animate__fadeIn">
+        <div class="nav__logo"><a href="index.html" title="Ir a Inicio"><img src="assets/images/logo.svg" alt="Logo de Ecojornadas" lang="es" width="300" height="54" ></a></div>
+          <nav class="nav__nav">
+            <ul class="nav__link">
+              <li class="link__pag p-1 ms-3"><a class="pag__link hvr-grow" href="index.html" title="Ir a Speakers" lang="es">Inicio</a></li>
+              <li class="link__pag p-1 ms-3"><a class="pag__link hvr-grow" href="#" title="Ir a Blog" lang="es">Blog</a></li>
+              <li class="link__pag p-1 ms-3"><a class="pag__link hvr-grow" href="#" title="Ir a Contacto" lang="es">Contacto</a></li>
+            </ul>
+          </nav>
+      </div>
+    </header>
+    <main>
+      <!-- speakers section -->
+      <section class="speakers animate__animated animate__zoomInUp">
+        <h2 class="speakers__title mb-5">Speakers</h2>
+          <div class="speakers__block  p-5">
+            <!-- block of 3 card on the top of the section -->
+            <div class="block__card">
+              <!-- card -->
+              <div class="card hvr-grow" style="width: 17rem;">
+                <img class="card__img" src="assets/images/persona1.webp" alt="Ramiro Perez">
+                <div class="card__body">
+                  <h5 class="body__title">Ramiro Perez</h5>
+                  <p class="body__text">Impulsa modelos de negocio sostenibles basados en la reutilización y el ecodiseño.</p>
+                </div>
+              </div>
+              <!-- card -->
+              <div class="card hvr-grow" style="width: 17rem;">
+                <img class="card__img" src="assets/images/persona2.webp" alt="Dalí Torres">
+                <div class="card__body">
+                  <h5 class="body__title">Dalí Torres</h5>
+                  <p class="body__text">Especialista en innovación circular, transforma residuos en recursos con alto valor añadido.</p>
+                </div>
+              </div>
+              <!-- card -->
+              <div class="card hvr-grow" style="width: 17rem;">
+                <img class="card__img" src="assets/images/persona3.webp" alt="Francisco González">
+                <div class="card__body">
+                  <h5 class="body__title">Francisco González</h5>
+                  <p class="body__text">Promueve políticas públicas que fomentan la economía regenerativa y la eficiencia energética.</p>
+                </div>
+              </div>
+            </div>
+            <hr class="block__line mt-3 mb-3">
+            <!-- block of 3 card on the bottom of the section -->
+            <div class="block__card">
+              <!-- card -->
+              <div class="card hvr-grow" style="width: 17rem;">
+                <img class="card__img" src="assets/images/persona4.webp" alt="Susana Álvarez">
+                <div class="card__body">
+                  <h5 class="body__title">Susana Álvarez</h5>
+                  <p class="body__text">Diseña estrategias para reducir la huella ambiental mediante procesos productivos circulares.</p>
+                </div>
+              </div>
+              <!-- card -->
+              <div class="card hvr-grow" style="width: 17rem;">
+                <img class="card__img" src="assets/images/persona5.webp" alt="Carlota Vázquez">
+                <div class="card__body">
+                  <h5 class="body__title">Carlota Vázquez</h5>
+                  <p class="body__text">Fomenta la colaboración entre empresas para cerrar ciclos de materiales y energía.</p>
+                </div>
+              </div>
+              <!-- card -->
+              <div class="card hvr-grow" style="width: 17rem;">
+                <img class="card__img" src="assets/images/persona6.webp" alt="Luísa Frida">
+                <div class="card__body">
+                  <h5 class="body__title">Luísa Frida</h5>
+                  <p class="body__text">Apoya la transición hacia un modelo económico más resiliente, inclusivo y sin desperdicio.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+    </main>
+    <include src="./views/footer.html"></include>
+  </body>
+</html>

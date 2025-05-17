@@ -1,3 +1,59 @@
-<footer class="uoc-footer">
-  &copy; Universitat Oberta de Catalunya
-</footer>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><!--Ya definido--></title>
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+  </head>
+  <footer class="mt-[1cm] mb-[1cm] container mx-auto px-4 animate__animated animate__fadeIn">
+    <!-- top section -->
+    <section class="top grid justify-items-center lg:grid-cols-2">
+      <!-- left side of top section with newsletter inscription -->
+      <div class="top__newsletter grid grid-cols-1 justify-items-center lg:justify-items-start mb-3">
+        <label class="newsletter__label mb-2 block" for="email">Susbscríbete a nuestra newsletter:</label>
+        <div class="flex items-center space-x-2 alin">
+          <div class="flex mb-3">
+            <span class="inline-flex items-center px-3 text-gray-500 bg-gray-200 border border-r-0 border-gray-300 rounded-l-md">@</span>
+            <input type="text" id="email" class="newsletter__input flex-1 block px-3 py-3 w-[300px] border border-gray-300 rounded-r-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1"
+            />
+          </div>
+          <button type="button" class="bg-blue-600 text-white px-4 py-3 mb-2 rounded-[0.2cm] hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">Enviar</button>
+        </div>
+        </div>
+        <!-- right side of tops section with adress -->
+        <div class="top__adress justify-items-end">
+          <address class="adress__data">
+            <strong>Ecojornadas</strong><br>
+            Rambla del Poblenou, 154-156<br>
+            Barcelona, Barcelona, 08018<br>
+            <a class="adress__mail underline" href="mailto:comolays27@uoc.edu" title="Escríbenos">comolays27@uoc.edu</a><br>
+          </address>
+        </div>
+    </section>
+    <hr class="mt-4 mb-4">
+    <!-- bottom section -->
+    <section class="bottom grid justify-items-center lg:grid-cols-3 items-center">
+      <!-- logo on the left side -->
+      <div class="bottom__logo mb-6 lg:mb-[0]"><a href="index.html" title="Ir a Inicio"><img src="assets/images/logo.svg" alt="Logo de Ecojornadas" lang="es" loading="lazy" width="300" height="54"></a></div>
+      <!-- list of links to other pages on the center side -->
+      <div class="bottom__pags mb-6 lg:mb-[0]">
+        <ul class="pags__list grid grid-cols-4 justify-items-center gap-[15px]">
+          <li class="list__link"><a class="link__web text-decoration-none cursor-pointer hover:text-black" href="index.html" title="Ir a Inicio" lang="es">Inicio</a></li>
+          <li class="list__link"><a class="link__web text-decoration-none cursor-pointer hover:text-black" href="speakers.html" title="Ir a Speakers" lang="es">Speakers</a></li>
+          <li class="list__link"><a class="link__web text-decoration-none cursor-pointer hover:text-black" href="#"  title="Ir a Blog" lang="es">Blog</a></li>
+          <li class="list__link"><a class="link__web text-decoration-none cursor-pointer hover:text-black" href="#" title="Ir a Contacta con nosotros" lang="es">Contacto</a></li>
+        </ul>
+      </div>
+      <!-- list of links to media on the right side -->
+      <div class="bottom__networkes">
+        <ul class="networkes__list grid grid-cols-4 gap-[15px]">
+          <li class="list__network"><a class="hvr-grow" href="#" title="Ir a nuestro Facebook"><img src="assets/images/facebook.png" alt="Logo de Facebook" loading="lazy" width="32" height="32"></a></li>
+          <li class="list__network"><a class="hvr-grow" href="#" title="Ir a nuestro X"><img src="assets/images/x.png" alt="Logo de X" loading="lazy" width="32" height="32"></a></li>
+          <li class="list__network"><a class="hvr-grow" href="#" title="Ir a nuestro Instagram"><img src="assets/images/instagram.png" alt="Logo de Instagram" loading="lazy" width="32" height="32"></a></li>
+          <li class="list__network"><a class="hvr-grow" href="#" title="Ir a nuestro Google plus"><img src="assets/images/google-plus.png" alt="Logo de Google plus" loading="lazy" width="32" height="32"></a></li>
+        </ul>
+      </div>
+    </section>
+  </footer>
+</html>

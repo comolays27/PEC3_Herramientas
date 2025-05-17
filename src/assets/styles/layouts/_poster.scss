@@ -1,0 +1,38 @@
+.poster {
+
+@media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(5, auto);
+      gap: 35px;
+    
+        .poster {
+          &__post--one {
+            grid-column: 1;
+            grid-row: 5;
+            justify-items: center;
+            margin-bottom: 1cm;
+          }
+  
+          &__post--two {
+            grid-column: 1;
+            grid-row: 4;
+          }
+  
+          &__post--three {
+            grid-column: 1;
+            grid-row: 2;
+          }
+  
+          &__post--four {
+            grid-column: 1;
+            grid-row: 3;
+          }
+  
+          &__post--sentence {
+            grid-column: 1;
+            grid-row: 1;
+            text-align: center;
+          }
+        }
+    }
+  }

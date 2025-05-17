@@ -1,27 +1,20 @@
-<!DOCTYPE html>
-
-<html>
+<!doctype html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Disfruta de jornadas sobre economía circular. Conócenos más en profundidad y conoce a nuestros speakers.">
+    <title>Inicio</title>
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" as="style">
+    <link rel="icon" href="assets/images/favicon.png" type="image/png">
+    <!-- preloads of main picture and logo -->
+    <link rel="preload" href="assets/images/fondo.webp" as="image">
+    <link rel="preload" href="assets/images/logo.svg" as="image">
+
   </head>
   <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
+    <include src="./views/poster.html"></include>
     <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
 </html>
