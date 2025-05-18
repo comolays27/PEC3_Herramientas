@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        principal: ['var(--font-principal)'],
+        principal: ['"Roboto Flex"', 'sans-serif'],
       },
       
       boxShadow: {
