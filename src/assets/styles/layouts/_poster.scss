@@ -1,6 +1,10 @@
 .poster {
+    container-type: inline-size;
+    container-name: mainsentence;
 
-@media (max-width: 768px) {
+    @container mainsentence (max-width: 400px) {.poster__post--sentence { background-color: rgb(223, 111, 197);}}
+
+    @media (max-width: 768px) {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(5, auto);
       gap: 35px;
@@ -12,22 +16,18 @@
             justify-items: center;
             margin-bottom: 1cm;
           }
-  
           &__post--two {
             grid-column: 1;
             grid-row: 4;
           }
-  
           &__post--three {
             grid-column: 1;
             grid-row: 2;
           }
-  
           &__post--four {
             grid-column: 1;
             grid-row: 3;
           }
-  
           &__post--sentence {
             grid-column: 1;
             grid-row: 1;
@@ -35,4 +35,16 @@
           }
         }
     }
-  }
+}
+
+@layer components {
+  .pag__link {@apply p-[12px] font-medium rounded-[0.6cm] no-underline bg-header-nav-links;}
+
+  .pag__link:hover,
+  .pag__link:focus {@apply bg-nav-botones-hover;}
+  
+  .postone__title,
+  .poster__post--two,
+  .poster__post--three,
+  .poster__post--four {@apply text-justify h-fit rounded-[0.2cm] bg-standar-blue;}
+}

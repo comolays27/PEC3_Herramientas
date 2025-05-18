@@ -1,0 +1,22 @@
+.speakers {
+  container-type: inline-size;
+  container-name: backgroundspeaker;
+  
+  &__block {
+
+    @container backgroundspeaker (max-width: 950px) {& { border-radius: 0.5cm; }}
+
+    @media (max-width: 1024px) {gap: 1.3cm;}}
+}
+
+.block{
+  @media (max-width: 1024px) { &__line { display: none; }}
+}
+
+.speakers__title {
+  @apply text-white w-fit;
+  font-size: 40px;
+  padding: 15px;
+  border-radius: calc(10px + 1vw);
+  background-color: oklch(0.8 0.2799 141.47);
+}

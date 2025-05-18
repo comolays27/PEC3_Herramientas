@@ -19,11 +19,11 @@
   </head>
   <body>
     <!-- nav -->
-    <header class="header__common">
-      <div class="nav  animate__animated animate__fadeIn">
+    <header class="header__common sticky top-0 z-[1000] flex w-full p-5 bg-[#ebb1b1]">
+      <div class="nav container pt-3 mx-auto grid grid-cols-1 justify-items-center items-center lg:grid-cols-2 lg:justify-items-stretch custom-justify  animate__animated animate__fadeIn">
         <div class="nav__logo"><a href="index.html" title="Ir a Inicio"><img src="assets/images/logo.svg" alt="Logo de Ecojornadas" lang="es" width="300" height="54" ></a></div>
-          <nav class="nav__nav">
-            <ul class="nav__link">
+          <nav class="nav__nav mt-[1cm] lg:mt-[0]">
+            <ul class="nav__link grid md:grid-cols-[repeat(3,120px)] gap-4 justify-end justify-items-center items-center">
               <li class="link__pag p-1 ms-3"><a class="pag__link hvr-grow" href="index.html" title="Ir a Speakers" lang="es">Inicio</a></li>
               <li class="link__pag p-1 ms-3"><a class="pag__link hvr-grow" href="#" title="Ir a Blog" lang="es">Blog</a></li>
               <li class="link__pag p-1 ms-3"><a class="pag__link hvr-grow" href="#" title="Ir a Contacto" lang="es">Contacto</a></li>
@@ -31,63 +31,63 @@
           </nav>
       </div>
     </header>
-    <main>
+    <main class="container mx-auto">
       <!-- speakers section -->
-      <section class="speakers animate__animated animate__zoomInUp">
-        <h2 class="speakers__title mb-5">Speakers</h2>
-          <div class="speakers__block  p-5">
+      <section class="speakers grid grid-cols-1 justify-items-center mt-[1cm] mb-[2cm] mx-auto animate__animated animate__zoomInUp">
+        <h2 class="speakers__title my-[1cm]">Speakers</h2>
+          <div class="speakers__block flex flex-col bg-standar-blue shadow-shadow w-[90%] h-max py-4 rounded-[20%] sm:p-[1cm] lg:p-[3cm]">
             <!-- block of 3 card on the top of the section -->
-            <div class="block__card">
+            <div class="block__card grid lg:grid-cols-3 gap-[1cm] justify-center items-center">
               <!-- card -->
-              <div class="card hvr-grow" style="width: 17rem;">
+              <div class="card hvr-grow flex flex-col overflow-hidden bg-white rounded-[50px] border-[4px] border-[#0000002d] shadow-md text-center w-full max-w-xs mx-auto" style="width: 100%; height: 360px;">
                 <img class="card__img" src="assets/images/persona1.webp" alt="Ramiro Perez">
-                <div class="card__body">
-                  <h5 class="body__title">Ramiro Perez</h5>
-                  <p class="body__text">Impulsa modelos de negocio sostenibles basados en la reutilización y el ecodiseño.</p>
+                <div class="card__body text-center leading-[1.8em] mt-4 px-5">
+                  <h5 class="body__title font-bold text-[20px]">Ramiro Perez</h5>
+                  <p class="body__text text-[18px] leading-[2rem]">Impulsa modelos de negocio sostenibles basados en la reutilización y el ecodiseño.</p>
                 </div>
               </div>
               <!-- card -->
-              <div class="card hvr-grow" style="width: 17rem;">
+              <div class="card hvr-grow flex flex-col overflow-hidden bg-white rounded-[50px] border-[4px] border-[#0000002d] shadow-md text-center w-full max-w-xs mx-auto" style="width: 100%; height: 380px;">
                 <img class="card__img" src="assets/images/persona2.webp" alt="Dalí Torres">
-                <div class="card__body">
-                  <h5 class="body__title">Dalí Torres</h5>
-                  <p class="body__text">Especialista en innovación circular, transforma residuos en recursos con alto valor añadido.</p>
+                <div class="card__body text-center leading-[1.8em] mt-4 px-5">
+                  <h5 class="body__title font-bold text-[20px]">Dalí Torres</h5>
+                  <p class="body__text text-[18px] leading-[2rem]">Especialista en innovación circular, transforma residuos en recursos con alto valor añadido.</p>
                 </div>
               </div>
               <!-- card -->
-              <div class="card hvr-grow" style="width: 17rem;">
+              <div class="card hvr-grow flex flex-col overflow-hidden bg-white rounded-[50px] border-[4px] border-[#0000002d] shadow-md text-center w-full max-w-xs mx-auto" style="width: 100%; height: 380px;">
                 <img class="card__img" src="assets/images/persona3.webp" alt="Francisco González">
-                <div class="card__body">
-                  <h5 class="body__title">Francisco González</h5>
-                  <p class="body__text">Promueve políticas públicas que fomentan la economía regenerativa y la eficiencia energética.</p>
+                <div class="card__body text-center leading-[1.8em] mt-4 px-5">
+                  <h5 class="body__title font-bold text-[20px]">Francisco González</h5>
+                  <p class="body__text text-[18px] leading-[2rem]">Promueve políticas públicas que fomentan la economía regenerativa y la eficiencia energética.</p>
                 </div>
               </div>
             </div>
-            <hr class="block__line mt-3 mb-3">
+            <hr class="block__line mt-8 mb-8">
             <!-- block of 3 card on the bottom of the section -->
-            <div class="block__card">
+            <div class="block__card grid lg:grid-cols-3 gap-[1cm] justify-center items-center">
               <!-- card -->
-              <div class="card hvr-grow" style="width: 17rem;">
+              <div class="card hvr-grow flex flex-col overflow-hidden bg-white rounded-[50px] border-[4px] border-[#0000002d] shadow-md text-center w-full max-w-xs mx-auto" style="width: 100%; height: 380px;">
                 <img class="card__img" src="assets/images/persona4.webp" alt="Susana Álvarez">
-                <div class="card__body">
-                  <h5 class="body__title">Susana Álvarez</h5>
-                  <p class="body__text">Diseña estrategias para reducir la huella ambiental mediante procesos productivos circulares.</p>
+                <div class="card__body text-center leading-[1.8em] mt-4 px-5">
+                  <h5 class="body__title font-bold text-[20px]">Susana Álvarez</h5>
+                  <p class="body__text text-[18px] leading-[2rem]">Diseña estrategias para reducir la huella ambiental mediante procesos productivos circulares.</p>
                 </div>
               </div>
               <!-- card -->
-              <div class="card hvr-grow" style="width: 17rem;">
+              <div class="card hvr-grow flex flex-col overflow-hidden bg-white rounded-[50px] border-[4px] border-[#0000002d] shadow-md text-center w-full max-w-xs mx-auto" style="width: 100%; height: 360px;">
                 <img class="card__img" src="assets/images/persona5.webp" alt="Carlota Vázquez">
-                <div class="card__body">
-                  <h5 class="body__title">Carlota Vázquez</h5>
-                  <p class="body__text">Fomenta la colaboración entre empresas para cerrar ciclos de materiales y energía.</p>
+                <div class="card__body text-center leading-[1.8em] mt-4 px-5">
+                  <h5 class="body__title font-bold text-[20px]">Carlota Vázquez</h5>
+                  <p class="body__text text-[18px] leading-[2rem]">Fomenta la colaboración entre empresas para cerrar ciclos de materiales y energía.</p>
                 </div>
               </div>
               <!-- card -->
-              <div class="card hvr-grow" style="width: 17rem;">
+              <div class="card hvr-grow flex flex-col overflow-hidden bg-white rounded-[50px] border-[4px] border-[#0000002d] shadow-md text-center w-full max-w-xs mx-auto" style="width: 100%; height: 380px;">
                 <img class="card__img" src="assets/images/persona6.webp" alt="Luísa Frida">
-                <div class="card__body">
-                  <h5 class="body__title">Luísa Frida</h5>
-                  <p class="body__text">Apoya la transición hacia un modelo económico más resiliente, inclusivo y sin desperdicio.</p>
+                <div class="card__body text-center leading-[1.8em] mt-4 px-5">
+                  <h5 class="body__title font-bold text-[20px]">Luísa Frida</h5>
+                  <p class="body__text text-[18px] leading-[2rem]">Apoya la transición hacia un modelo económico más resiliente, inclusivo y sin desperdicio.</p>
                 </div>
               </div>
             </div>

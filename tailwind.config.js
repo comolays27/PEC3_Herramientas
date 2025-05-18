@@ -7,6 +7,10 @@ module.exports = {
         principal: ['var(--font-principal)'],
       },
       
+      boxShadow: {
+        shadow: '0px 10px 5px 0px rgba(0, 0, 0, 0.75)',
+      },
+
       colors: {
         'common-background': '#d6cfec',
         'nav-color': '#eca539',

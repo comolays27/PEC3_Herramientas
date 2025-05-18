@@ -1,9 +1,11 @@
-@import "index.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 //fonts @imports 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 
-//helpers and boostrap @imports 
+//helpers @imports 
 @import "base/variables";
 
 //dependencies @imports  - animate.css and hover.css
@@ -14,5 +16,6 @@
 //all webs @imports layouts and necesary .scss
 @import "base/base";
 @import "base/typografy";
+@import "layouts/footer";
 @import "layouts/poster";
-@import "layouts/footer"
+@import "layouts/speakers";
