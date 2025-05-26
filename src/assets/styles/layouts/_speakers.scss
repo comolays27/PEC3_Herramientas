@@ -9,7 +9,7 @@
     @media (max-width: 1024px) {gap: 1.3cm;}}
 }
 
-.block{@media (max-width: 1024px) { &__line { display: none; }}}
+.block{ @media (max-width: 1024px) { &__line { display: none; }} }
 
 .speakers__title {
   @apply text-white w-fit;
@@ -17,4 +17,9 @@
   padding: 15px;
   border-radius: calc(10px + 1vw);
   background-color: oklch(0.8 0.2799 141.47);
+}
+
+//@apply for cards
+.card {
+  @apply flex flex-col overflow-hidden bg-white rounded-[50px] border-[4px] border-[#0000002d] shadow-md text-center w-full max-w-xs mx-auto;
 }
