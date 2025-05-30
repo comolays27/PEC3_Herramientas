@@ -5,12 +5,13 @@
   &__block {
 
     @container backgroundspeaker (max-width: 950px) {& { border-radius: 0.5cm; }}
-
+    //Space between top and bottom cards.
     @media (max-width: 1024px) {gap: 1.3cm;}}
 }
 
 .block{ @media (max-width: 1024px) { &__line { display: none; }} }
 
+//@apply for speakers web title.
 .speakers__title {
   @apply text-white w-fit;
   font-size: 40px;
