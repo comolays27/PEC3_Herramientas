@@ -49,13 +49,11 @@ header *, footer * {
   font-weight: 500;
   padding: 0.5rem 1rem;
   border-radius: 4px;
-  transition: background 0.3s, color 0.3s;
 }
 
 .hover-effect {
   background-color: black;
   color: white !important;
-  transition: background 0.3s, color 0.3s;
 }
 
 .header-intro {
@@ -63,11 +61,7 @@ header *, footer * {
   text-align: center;
 }
 
-.header-intro h1, .header-intro p {margin: 0 auto;}
-
 .header-intro h1 { margin-bottom: 1.5rem; }
-
-.header-intro p { margin-bottom: 0; }
 
 .main-image {
   display: block;
@@ -132,7 +126,6 @@ header *, footer * {
   display: flex;
   gap: 20px;
   padding: 0;
-  margin: 0;
   list-style: none;
 }
 
