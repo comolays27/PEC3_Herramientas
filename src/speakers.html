@@ -19,11 +19,11 @@
   </head>
   <body class="font-principal bg-common-background">
     <!-- nav -->
-    <header class="header__common sticky top-0 z-[1000] flex w-full p-5 bg-[#ebb1b1]">
+    <header class="header__common flex sticky top-0 z-[1000] w-full p-5 bg-[#ebb1b1]">
       <div class="nav container grid grid-cols-1 justify-items-center items-center lg:grid-cols-2 lg:justify-items-stretch animate__animated animate__fadeIn">
         <div class="nav__logo"><a href="index.html" title="Ir a Inicio"><img src="assets/images/logo.svg" alt="Logo de Ecojornadas" lang="es" width="300" height="54" ></a></div>
         <nav class="nav__nav mt-[1cm] lg:mt-[0]">
-          <ul class="nav__link grid md:grid-cols-[repeat(3,120px)] gap-4 justify-end justify-items-center items-center">
+          <ul class="nav__link grid  gap-4 justify-end justify-items-center items-center md:grid-cols-[repeat(3,120px)]">
             <li class="link__pag p-1 ms-3"><a class="pag__link hvr-grow" href="index.html" title="Ir a Speakers" lang="es">Inicio</a></li>
             <li class="link__pag p-1 ms-3"><a class="pag__link hvr-grow" href="#" title="Ir a Blog" lang="es">Blog</a></li>
             <li class="link__pag p-1 ms-3"><a class="pag__link hvr-grow" href="#" title="Ir a Contacto" lang="es">Contacto</a></li>
@@ -34,7 +34,7 @@
       <main class="container">
         <section class="speakers grid grid-cols-1 justify-items-center mt-[1cm] mb-[2cm] mx-auto animate__animated animate__zoomInUp">
           <h2 class="speakers__title my-[1cm]">Speakers</h2>
-            <div class="speakers__block flex flex-col bg-standar-blue shadow-shadow w-[90%] h-max py-4 rounded-[20%] sm:p-[1cm] lg:p-[3cm]">
+            <div class="speakers__block flex flex-col w-[90%] h-max py-4 bg-standar-blue shadow-shadow rounded-[20%] sm:p-[1cm] lg:p-[3cm]">
               <!--Top block of speakers cards-->
               <include src="./views/top-cards.html"></include>
               <hr class="block__line mt-8 mb-8">
